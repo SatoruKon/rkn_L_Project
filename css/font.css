@@ -1,3 +1,18 @@
-/* Rubik Font */
+/* Montserrat Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+h1{
+   font-size: var(--header-h1-font-size-desktop);
+   font-weight: 700;
+}
+
+h2{
+   font-size: var(--header-h2-font-size-desktop);
+   font-weight: 600;  
+}
+
+p{
+   font-size: var(--header-p-font-size-desktop);
+   font-weight: 400;
+}
