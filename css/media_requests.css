@@ -1,7 +1,125 @@
 @import url("main.css");
 
 
-
-@media (max-width: 1200px) {
+/*------------Tablet version-------------*/
+@media (max-width: 1000px) {
+   .header__menue{
+      display: none;
+   }
+   .header__phone{
+      display: none; 
+   }
+   .header__burger{
+      font-size: 2rem;
+      display:block;
+     
+   }
+   .header__informationbody{
+      
+      grid-template-columns: [start] auto [col-end];
+      grid-template-rows: [start] auto auto auto auto auto [row-end];
    
+      grid-template-areas: "h_title"  
+                          "h_countries" 
+                          "h_deliverymanimg" 
+                          "h_orderbuttoncontainer" 
+                          "h_headertopics";         
+      justify-content: space-around;
+      align-items: center;
+   } 
+   .header__title{                 
+      font-size: var(--header-h1-font-size-tablet);
+      text-align: center;         
+   }
+   .header__countries{                
+      font-size: var(--header-h2-font-size-tablet);
+      text-align: center;
+   }   
+   .button_header__orderbuttoncontainer{        
+      font-size: var(--header-button-font-size-tablet);
+      width: 383px;
+      height: 76px;    
+      
+      margin:0px auto;
+   }
+   .header__deliverymanimg{
+      max-height: 500px;
+      justify-content: center;
+   }
+
+   .header__deliverymanimg  img{
+      height: 100%;
+      width: auto;
+      margin: 0px auto;
+      object-fit: cover;
+   }    
+
 }
+/*------------End of Tablet version-------------*/
+
+/*------------Mobile version-------------*/
+@media (max-width: 500px) {
+   .header{
+      padding-left: 1%;
+      padding-right: 1%;   
+   }
+   .header__companyname{
+      font-size: var(--header-logo-font-size-mobile);
+      font-weight: 600; 
+      margin-left: 1rem;
+   }
+   .header__burger{
+      font-size: 1.5rem;
+      display:block;   
+      margin-right: 1rem;  
+   }
+   .header__informationbody{
+      
+      grid-template-columns: [start] auto [col-end];
+      grid-template-rows: [start] auto auto auto auto [row-end];
+   
+      grid-template-areas: "h_title"  
+                          "h_countries" 
+                          "h_deliverymanimg" 
+                          "h_orderbuttoncontainer";         
+      justify-content: center;
+      align-items: center;
+   } 
+   .header__title{                 
+      font-size: var(--header-h1-font-size-mobile);
+      text-align: center;   
+      
+      line-height: 100%;
+      display: inline-block;
+
+   }
+   .header__countries{                
+      font-size: var(--header-h2-font-size-mobile);
+      text-align: center;
+   }   
+   .header__topics{
+      display: none;   
+   }
+
+   .button_header__orderbuttoncontainer{        
+      font-size: var(--header-button-font-size-mobile);
+      width: 292px;
+      height: 60px;      
+
+      box-shadow:none;
+   }
+
+   .header__deliverymanimg{
+      max-width: 248px;
+      margin:0px auto;
+   }
+
+   .header__deliverymanimg  img{
+      width: 100%;
+      height: auto;
+      margin: 0px auto;
+      
+   }   
+
+}
+/*------------End of Mobile version-------------*/
