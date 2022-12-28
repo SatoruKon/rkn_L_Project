@@ -85,12 +85,33 @@
 .header__menue ul li{
    display: block;
    margin-right: 1rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   padding: 0.5rem 1rem;
 }
 
-.header__phone{
+.header__menue ul li:hover{
+   background-color: #FF772B;
+   color: aliceblue;
+   cursor: pointer;
+      
+   transition: 1s;
+}
+
+.header__phone{   
+   text-decoration: underline; 
+}
+
+.header__phone p{
    font-size: var(--header-phone-font-size-desktop);
    font-weight: 500;
-   text-decoration: underline; 
+}
+
+.header__phone:hover{
+   cursor: pointer;
+   
+   text-shadow: 2px 2px white;
+   transition: 1s;
 }
 
 .header__burger{
@@ -98,9 +119,6 @@
    font-size: var(--header-phone-font-size-desktop);
    font-weight: 500; 
 }
-
-
-
 
 .header__informationbody{
    display:grid;
@@ -119,25 +137,27 @@
 }
 
 .header__title{   
-   grid-area: h_title;
-     
-   font-size: var(--header-h1-font-size-desktop);
-   font-weight: 700; 
-
-   line-height: 90%;
-
+   grid-area: h_title;     
+   
    padding: 0px;
    margin: 0px;
-
-   
-      
 }
+.header__title h1{
+   line-height: 90%;
+}
+
+
 .header__countries{   
    grid-area: h_countries;
-     
+   
+}
+
+/*
+.header__countries h2{
    font-size: var(--header-h2-font-size-desktop);
    font-weight: 600;  
 }
+*/
 
 .header__orderbuttoncontainer{   
    grid-area: h_orderbuttoncontainer;  
@@ -151,8 +171,7 @@
    
    color: white;
 
-   font-size: var(--header-button-font-size-desktop);
-   font-weight: 600;
+   
    width: 304px;
    height: 60px;
    
@@ -160,13 +179,29 @@
    align-items: center;
 
    box-shadow:
-   5px 2px var(--header-background-color), 5px 5px var(--header-background-color),
-   8px 4px rgb(255, 255, 255), 8px 8px rgb(255, 255, 255);
+   5px 5px var(--header-background-color),
+   8px 8px rgb(255, 255, 255);   
+}
+
+.button_header__orderbuttoncontainer:hover{
+   background-color: #FF772B;
+   color: white;
+   cursor: pointer;
+   transition: 1s;
+
+   box-shadow:
+   2px 2px var(--header-background-color),
+   4px 4px rgb(255, 255, 255);
    
 }
+
 .button_header__orderbuttoncontainer p{
    display: block;
    margin:0px auto;
+   font-size: var(--header-button-font-size-desktop);
+   font-weight: 600;
+
+   user-select: none;
 }
 
 .header__topics{
@@ -187,9 +222,6 @@
 
 .topic_header__topics p{
    
-   
-   font-size: var(--header-p-font-size-desktop);
-   font-weight: 400; 
    padding-left: 0.5rem;
    padding-right: 1.5rem;
 }
@@ -198,7 +230,6 @@
    grid-area: h_deliverymanimg;
    
    overflow: hidden;
-
    align-self: end;
    
 }
