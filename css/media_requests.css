@@ -53,6 +53,78 @@
       margin: 0px auto;
       object-fit: cover;
    }    
+/*------------Process area of Tablet version-------------*/
+
+.main__process{
+   padding-left: 1%;
+   padding-right: 1%;   
+}
+
+.main__process_container{      
+   margin: 0px auto;
+   max-width: 85%;
+   padding-top: 2rem;
+}
+
+.main__process_topicsgrid{
+   display:grid;
+   grid-template-columns: [start] 0.2fr 1fr[col-end];
+   grid-template-rows: [start] auto auto auto auto [row-end];
+
+   grid-template-areas: "topicnumber01 topicheader01" 
+                        "topicnumber01 topictext01"
+                        "topicnumber02 topicheader02"
+                        "topicnumber02 topictext02"
+                        "topicnumber03 topicheader03"
+                        "topicnumber03 topictext03"
+                        "topicnumber04 topicheader04"
+                        "topicnumber04 topictext04";                        
+                       
+   
+   width: 100%;
+   column-gap: 0.5rem;
+}
+
+.text_main__process_header{
+   font-size: 1.875rem;
+   font-weight: 600;
+}
+
+.topicnumber_process{
+   display: block;
+   font-size: 5.625rem;
+   font-weight: 300;
+   text-shadow: 2px 0px #FF772B;
+   
+   margin: 0rem;
+   padding: 0rem;
+   align-self:flex-end;
+   object-position: bottom;
+   margin-top: 1rem;
+}
+.topicheader__process{
+   font-size: 1.5rem;
+   font-weight: 500;
+
+   margin: 0rem;
+   margin-top: 2rem;
+   padding: 0rem;
+}
+.topictext__process{
+   font-size: 1rem;
+   font-weight: 400;
+   margin: 0rem;
+   
+   margin-top: 1rem;
+   padding: 0rem;
+}
+
+.emptycol{
+   display: none;
+}
+
+/*------------End of Process area of Tablet version-------------*/
+
 
 }
 /*------------End of Tablet version-------------*/
@@ -126,6 +198,96 @@
       margin: 0px auto;
       
    }   
+
+/*------------Process area of Mobile version-------------*/
+.main__process{
+   padding-left: 1%;
+   padding-right: 1%;   
+}
+
+.main__process_container{      
+   margin: 0px auto;
+   max-width: 85%;
+   padding-top: 2rem;
+}
+
+.main__process_topicsgrid{
+   display:grid;
+   grid-template-columns: [start] 0.2fr 1fr 0.1fr[col-end];
+   grid-template-rows: [start] auto auto auto auto [row-end];
+
+   grid-template-areas: "topicnumber01 topicheader01 arrow1"                         
+                        "topicnumber02 topicheader02 arrow2"                        
+                        "topicnumber03 topicheader03 arrow3"                        
+                        "topicnumber04 topicheader04 arrow4";                    
+                          
+   column-gap: 0.5rem;
+}
+
+.text_main__process_header{
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.topicnumber_process{
+   font-size: 3.125rem;
+   font-weight: 300;
+   text-shadow: 2px 0px #FF772B;
+   
+   margin: 0rem;
+   padding: 0rem;
+   
+   margin-top: 1rem;
+}
+.topicheader__process{
+   font-size: 1rem;
+   font-weight: 500;
+
+   margin: 0rem;
+   margin-top: 1rem;
+   padding: 0rem;
+}
+.topictext__process{
+   display: none;
+}
+
+.topictext01__process .topictext01__process .topictext01__process .topictext01__process{
+   display: none;
+}
+
+.emptycol{
+   display: none;
+}
+
+ .process__arrowdown1, .process__arrowdown2, .process__arrowdown3, .process__arrowdown4{
+   display: block;
+   align-self: center;
+    justify-self: center;
+}
+
+
+.arrowimg_process{
+   
+}
+
+.process__arrowdown1{
+    grid-area: arrow1;
+
+}
+.process__arrowdown2{
+   grid-area: arrow2;
+}
+.process__arrowdown3{
+   grid-area: arrow3;
+}
+.process__arrowdown4{
+   grid-area: arrow4;
+}
+
+
+
+
+/*------------End of Process area of Mobile version-------------*/
 
 }
 /*------------End of Mobile version-------------*/
