@@ -235,7 +235,7 @@
 /*================Process section =============*/
 
 .main__process{
-   background-color: var(--main-background-color);
+   background-color: #FFFFFF;
    color: var(--main-txt-color);
    
    margin: 0px;   
@@ -352,3 +352,142 @@
 .arrowimg_process{
    align-self: center;
 }
+
+/*================End of Process section =============*/
+
+/*================Price section =============*/
+
+.main__prices{
+   background-color: #FFFFFF;
+   color: var(--main-txt-color);
+   
+   margin: 0px;   
+   
+   padding-left: 3%;
+   padding-right: 3%;  
+   padding-bottom: 2rem;
+}
+
+.main__prices_container{      
+   margin: 0px auto;
+   max-width: 1305px;
+   padding-top: 2rem;
+}
+
+.main__prices_header{
+   text-align: center;   
+}
+
+.header1_main__prices{
+   font-size: 1.875rem;
+   font-weight: 600;   
+}
+
+.header2_main__prices{
+   font-size: 1.5rem;
+   font-weight: 600;   
+}
+
+.main__prices_cardscontainer{
+   max-width: 1305px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.main__prices_card{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   max-width: 421px;
+   
+
+   border-color: #EBEBEB;
+   border-width: 2px;
+   border-style: solid;
+
+   flex-grow:1;
+
+   margin: 2%;
+}
+.main__prices_card:hover{
+      border: 1px solid #FED100;
+      box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+      transition: 0.5s;
+}
+
+.cardheader_main__prices{
+   display: block;
+   margin: 0px auto;
+
+   margin-top: 5.875rem;
+   margin-bottom: 2.125rem;
+
+   font-size: 1.5rem;
+   font-weight: 600;
+
+}
+
+.text_main__prices{
+   display: block;
+   margin: 0px auto;
+
+   margin-top: 1.625rem;
+
+   font-size: var(--header-p-font-size-desktop);
+   font-weight: 400;
+}
+
+.text_price_main__prices{
+   display: block;
+   margin: 0px auto;
+
+   margin-top: 3.75rem;
+   margin-bottom: 3.25rem;
+
+   font-size: 1.875rem;
+   font-weight: 600;
+}
+
+.main__prices_orderbuttoncontainer{
+   display: flex;
+   margin: 0px auto;
+   margin-bottom: 4.875rem;
+
+
+   width: 250px;
+   height: 51px;
+   background-color: #FED100;
+   color: #333333;
+
+   justify-content: center;
+   align-items: center;
+      
+}
+
+.text_prices_orderbutton{
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin: 0px;
+
+   user-select: none;
+}
+
+.main__prices_orderbuttoncontainer:hover{
+   box-shadow: 0px 4px 24px #FED100;   
+   color: #FFFFFF;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.main__prices_allpricecontainer{
+   margin:0 auto;
+   display: none;
+}
+
+.text_prices_allpricestxt{
+   font-size: 1.562rem;
+   font-weight: 500;
+   text-align: center;
+}
+/*================End of Price section =============*/
