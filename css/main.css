@@ -491,3 +491,187 @@
    text-align: center;
 }
 /*================End of Price section =============*/
+
+
+/*================Start of Autopark section =============*/
+.main__autopark{
+   background-color: #FFFFFF;
+   color: var(--main-txt-color);
+   
+   margin: 0px;   
+   
+   padding-left: 3%;
+   padding-right: 3%;  
+   padding-bottom: 2rem;
+}
+
+.main__autopark_container{      
+   margin: 0px auto;
+   max-width: 1221px;
+   padding-top: 1rem;
+}
+
+.main__autopark_header{
+   text-align: center;   
+}
+
+.header1_main__autopark{
+   font-size: 1.875rem;
+   font-weight: 600;   
+}
+
+.header2_main__autopark{
+   font-size: 1.5rem;
+   font-weight: 600;   
+}
+
+.main__autopark_carbuttoncontainer{
+   display: flex;
+   margin: 0px auto;
+   margin-bottom: 3.75rem;
+   width: 643px;   
+
+   justify-content:space-between;
+   align-items: center;      
+}
+
+.buttoncar_main__autopark{
+   background-color: white;
+   border: 1px solid #EBEBEB;
+      
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   width: 201px;
+   height: 50px;
+}
+
+.buttoncartxt_main__autopark{
+   font-size: 1.25rem;
+   font-weight: 500;   
+   user-select: none;
+}
+
+.buttoncar_main__autopark:hover{
+   box-shadow: 0px 4px 24px #FED100;
+   border: 1px solid #FED100;   
+   
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.main__autopark_slidecontainer{
+   display:grid;
+   grid-template-columns: [start] 0.15fr 1fr 2fr 0.15fr [col-end];
+   grid-template-rows: [start] 30px auto auto [row-end];
+
+   grid-template-areas: "arrowleft_ap slideheader_ap image_ap  arrowright_ap"
+                        "arrowleft_ap featurs_ap image_ap  arrowright_ap"
+                        "arrowleft_ap orderbtn_ap image_ap  arrowright_ap";
+                       
+   width: 100%;
+}
+
+.slideheadertxt_main__autopark{
+   font-size: 1.5rem;
+   font-weight: 600;
+
+   margin: 0px;
+}
+
+.extslideheadertxt_main__autopark{
+   font-size: 1.5rem;
+   font-weight: 600;
+   display: none;
+
+}
+
+
+.arrowleft_main__autopark{   
+   grid-area: arrowleft_ap;  
+   align-self: center;
+   padding-right: 1rem;
+}
+
+
+.arrowright_main__autopark{   
+   grid-area: arrowright_ap;  
+   align-self: center; 
+   padding-left: 1rem;  
+}
+
+.slideimg_main__autopark{
+   grid-area: image_ap;
+   max-width: 641px;
+}
+.imgslideimg_main__autopark{
+   width: 100%;
+}
+
+.slideheader_main__autopark{
+   grid-area: slideheader_ap;
+   height: 29px;
+   align-self: start;
+}
+
+.main__autopark_featurelistcontainer{
+   grid-area: featurs_ap;
+   align-self: center;
+   
+}
+
+.main__autopark_featurelistcontainer ul{
+   list-style: none;
+   margin:0px;
+   padding: 0px;
+   
+}
+
+.main__autopark_featurelistcontainer ul li{
+   
+   
+   font-size: 1rem;
+   font-weight: 400;
+   margin:0px;
+   margin-top: 1.75rem;
+}
+
+
+.main__autoprk_radiobuttonscontainer{
+   grid-area: radiobuttons_ap;
+   display: none;
+}
+
+
+.main__autoprk_orderbuttoncontainer{
+   grid-area: orderbtn_ap;
+
+   display: flex;
+      
+   width: 250px;
+   height: 50px; 
+   
+   background-color: #FED100;
+   
+   justify-content:center;
+   align-items: center;      
+}
+
+
+.txt_main__autoprk_orderbuttoncontainer{
+   font-size: 1.25rem;
+   font-weight: 500;   
+   user-select: none;
+}
+
+.main__autoprk_orderbuttoncontainer:hover{
+   box-shadow: 0px 4px 24px #FED100;
+   color:white;
+   
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+/*================End of Autopark section =============*/
