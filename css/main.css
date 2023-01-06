@@ -85,9 +85,8 @@
 .header__menue ul li{
    display: block;
    margin-right: 1rem;
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
-   padding: 0.5rem 1rem;
+   
+   padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
 .header__menue ul li:hover{
@@ -240,10 +239,7 @@
    
    margin: 0px;   
    
-   padding-left: 3%;
-   padding-right: 3%;  
-   
-   padding-bottom: 2rem;
+   padding: 0rem 3% 2rem 3%;
 }
 
 .main__process_container{      
@@ -363,9 +359,7 @@
    
    margin: 0px;   
    
-   padding-left: 3%;
-   padding-right: 3%;  
-   padding-bottom: 2rem;
+   padding: 0rem 3% 2rem 3%;
 }
 
 .main__prices_container{      
@@ -418,21 +412,17 @@
 
 .cardheader_main__prices{
    display: block;
-   margin: 0px auto;
-
-   margin-top: 5.875rem;
-   margin-bottom: 2.125rem;
-
+   
+   margin: 5.875rem auto 2.125rem auto;
+   
    font-size: 1.5rem;
    font-weight: 600;
-
 }
 
 .text_main__prices{
    display: block;
-   margin: 0px auto;
-
-   margin-top: 1.625rem;
+   
+   margin: 1.625rem auto 0rem auto;
 
    font-size: var(--header-p-font-size-desktop);
    font-weight: 400;
@@ -440,10 +430,8 @@
 
 .text_price_main__prices{
    display: block;
-   margin: 0px auto;
-
-   margin-top: 3.75rem;
-   margin-bottom: 3.25rem;
+   
+   margin: 3.75rem auto 3.25rem auto; 
 
    font-size: 1.875rem;
    font-weight: 600;
@@ -451,18 +439,15 @@
 
 .main__prices_orderbuttoncontainer{
    display: flex;
-   margin: 0px auto;
-   margin-bottom: 4.875rem;
-
-
+   margin: 0px auto 4.875rem auto;
+   
    width: 250px;
    height: 51px;
    background-color: #FED100;
    color: #333333;
 
    justify-content: center;
-   align-items: center;
-      
+   align-items: center;      
 }
 
 .text_prices_orderbutton{
@@ -500,9 +485,7 @@
    
    margin: 0px;   
    
-   padding-left: 3%;
-   padding-right: 3%;  
-   padding-bottom: 2rem;
+   padding: 0rem 3% 2rem 3%;
 }
 
 .main__autopark_container{      
@@ -527,8 +510,8 @@
 
 .main__autopark_carbuttoncontainer{
    display: flex;
-   margin: 0px auto;
-   margin-bottom: 3.75rem;
+   margin: 0px auto 3.75rem auto;
+   
    width: 643px;   
 
    justify-content:space-between;
@@ -564,7 +547,7 @@
 
 .main__autopark_slidecontainer{
    display:grid;
-   grid-template-columns: [start] 0.15fr 1fr 2fr 0.15fr [col-end];
+   grid-template-columns: [start] 0.4fr 1fr 2fr 0.4fr [col-end];
    grid-template-rows: [start] 30px auto auto [row-end];
 
    grid-template-areas: "arrowleft_ap slideheader_ap image_ap  arrowright_ap"
@@ -592,14 +575,14 @@
 .arrowleft_main__autopark{   
    grid-area: arrowleft_ap;  
    align-self: center;
-   padding-right: 1rem;
+   margin-right: 2rem;
 }
 
 
 .arrowright_main__autopark{   
    grid-area: arrowright_ap;  
    align-self: center; 
-   padding-left: 1rem;  
+   margin-left: 2rem;  
 }
 
 .slideimg_main__autopark{
@@ -634,8 +617,8 @@
    
    font-size: 1rem;
    font-weight: 400;
-   margin:0px;
-   margin-top: 1.75rem;
+   margin:1.75rem 0 0 0;
+   
 }
 
 
@@ -675,3 +658,127 @@
 }
 
 /*================End of Autopark section =============*/
+
+
+/*================Start of Feedback section =============*/
+.main__feedback{
+   background-color: #FED100;
+   color: var(--main-txt-color);
+   
+   margin: 0px;   
+   
+   padding: 0rem 3% 2rem 3%;
+}
+
+.main__feedbackcontainer{      
+   margin: 0px auto;
+   max-width: 1300px;
+   padding: 0px;
+}
+
+.main__feedbackheader{
+   padding-top: 6.25rem;
+   text-align: center;   
+}
+
+.txt_main__feedbackheader{
+   font-size: 1.875rem;
+   font-weight: 600;   
+}
+
+
+
+.main__feedbackcards_container{
+   display: flex;
+   margin: 3.75rem auto 4.75rem auto;
+   
+   width: 100%;   
+
+   justify-content:space-between;
+   align-items: center;      
+}
+
+.main__feedbackcard{
+   max-width: 420px;
+}
+
+.txt_main__feedbackcard_name{
+   font-size: 1.5rem;
+   font-weight: 600;   
+   margin: 2.5rem 0rem 0rem 0rem;
+   padding: 0px;
+   
+}  
+
+.txt_main__feedbackcard_date{
+   font-size: 1rem;
+   font-weight: 400;
+
+   margin: 0.625rem 0rem 0rem 0rem;
+   
+   padding: 0px;   
+}
+
+.stars_main__feedbackcard{
+   color: #FF352B;
+}
+
+.txt_main__feedback_text{
+   font-size: 1rem;
+   font-weight: 400;
+   
+   margin: 1.125rem 0rem 0rem 0rem;
+   padding: 0px;
+   
+}
+.main__feedback_readalltxt{
+   display: none;
+}
+.txt_main__feedback_readalltxt{
+   font-size: 1rem;
+   font-weight: 500;
+   text-decoration: underline;
+}
+
+.main__feedback_radiobuttonscontainer{
+   display: none;
+}
+
+.main__feedback_buttonallfeedbackcontainer{
+   display: flex;
+      
+   width: 250px;
+   height: 50px; 
+
+   margin: 0 auto;
+   
+   background-color: #FED100;
+   
+   justify-content:center;
+   align-items: center; 
+   
+   border: 1px solid #333333;
+}
+
+
+.txt_main__feedback_buttonallfeedback{
+   font-size: 1.25rem;
+   font-weight: 500;   
+   user-select: none;
+}
+
+.main__feedback_buttonallfeedbackcontainer:hover{
+   box-shadow: 0 0 0 5px #FED100,
+               0 0 0 6px white;
+   
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.main__feedback_buttonallfeedbackcontainer:hover .txt_main__feedback_buttonallfeedback{
+   
+   font-weight: 700;   
+   transition: 0.5s;
+}
+
+/*================End of Feedbackk section =============*/
