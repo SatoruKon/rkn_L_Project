@@ -701,7 +701,10 @@
 }
 
 .main__feedbackcard{
+   /*
    max-width: 420px;
+*/
+   max-width: 30%;
 }
 
 .txt_main__feedbackcard_name{
@@ -782,5 +785,7 @@
    font-weight: 700;   
    transition: 0.5s;
 }
+
+
 
 /*================End of Feedbackk section =============*/

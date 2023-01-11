@@ -266,7 +266,7 @@
 .main__autopark{
    padding-left: 1%;
    
-   padding: 0px 1% 2rem 1%;
+   padding: 0px 1% 5.625rem 1%;
 }
 
 .main__autopark_container{      
@@ -474,7 +474,218 @@
 }
 
 
-/*------------End of Autopark area of Tablet version-------------*/
+/*------------End of Autopark area of Tablet version--------------------*/
+
+/*------------Start of Feedback area of Tablet version--------------------*/
+
+.main__feedback{
+   background-color: #FED100;
+   color: var(--main-txt-color);
+   
+   margin: 0px;   
+   
+   padding: 0rem 0rem 3rem 0rem;
+   
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+
+   overflow: hidden;
+}
+
+.main__feedbackcontainer{      
+   margin: 0px auto;
+   width: 1300px;
+   padding: 0px;
+
+}
+
+.main__feedbackheader{
+   padding: 3.25rem 0rem 0rem 0rem;
+   margin:0;
+
+   text-align: center;   
+}
+
+.txt_main__feedbackheader{
+   font-size: 1.875rem;
+   font-weight: 600;   
+   margin: 0px;
+   padding: 0px;
+   
+}
+
+
+
+.main__feedbackcards_container{
+   display: flex;
+   margin: 3.75rem auto 0 auto;
+   
+   width: 100%;   
+
+   justify-content:space-between;
+   align-items: center;      
+
+}
+
+.main__feedbackcard{
+   /*
+   max-width: 420px;
+*/
+   width: 420px;
+}
+
+.txt_main__feedbackcard_name{
+   font-size: 1.5rem;
+   font-weight: 600;   
+   margin: 0px;
+   padding: 0px;
+   
+}  
+
+.txt_main__feedbackcard_date{
+   font-size: 1rem;
+   font-weight: 400;
+
+   margin: 0.625rem 0rem 0rem 0rem;
+   
+   padding: 0px;   
+}
+
+
+.main__feedback_text{
+   height: 140px;
+   overflow: hidden;
+   
+}
+
+.txt_main__feedback_text{
+   font-size: 1rem;
+   font-weight: 400;
+   
+   margin: 1.125rem 0rem 0rem 0rem;
+   padding: 0px;
+   
+   -webkit-line-clamp: 6; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+   
+}
+.main__feedback_readalltxt{
+   margin-top: 1.125rem;
+   display: contents;
+}
+.txt_main__feedback_readalltxt{
+   font-size: 1rem;
+   font-weight: 500;
+   text-decoration: underline;
+   margin: 0px;
+   padding: 0px;
+}
+
+/*------------start of radiobutton section -------------*/
+.main__feedback_radiobuttonscontainer{
+   display: flex;
+   max-width: 132px;
+   margin:0px auto;
+   padding: 0;
+
+   align-self: center;
+   justify-content: center;
+
+}
+
+
+.slider-feedback{
+   display:inline-flex;
+   
+   align-items: center;
+   justify-content: center;
+
+   align-self: end;
+   
+   margin: 2.625rem auto 0px auto;
+   
+   width: 300px;
+   
+}
+.slider-feedback input{
+   display: none;
+}
+
+.slider-feedback label {
+   display: block;
+   
+   height: 10px;
+   width: 10px;
+   border-radius: 50%;
+   border: 1px solid black;
+
+   background: black;
+   cursor: pointer;
+   margin: 15px;
+ }
+
+ #button1feedbk:checked ~ #rb1feedbk,
+ #button2feedbk:checked ~ #rb2feedbk,
+ #button3feedbk:checked ~ #rb3feedbk,
+ #button4feedbk:checked ~ #rb4feedbk,
+ #button5feedbk:checked ~ #rb5feedbk {   
+   box-shadow: 0 0 0 7px #FED100, 0 0 0 8px #020202;
+   transition: 0.5s;   
+}
+
+ #button1feedbk:hover ~ #rb1feedbk,
+ #button2feedbk:hover ~ #rb2feedbk,
+ #button3feedbk:hover ~ #rb3feedbk,
+ #button4feedbk:hover ~ #rb4feedbk,
+ #button5feedbk:hover ~ #rb5feedbk {   
+   border: 1px solid rgb(77, 76, 76);
+   background: rgb(151, 151, 151);   
+   transition: 0.5s;   
+}
+/*------------end of radiobutton section -------------*/
+
+.main__feedback_buttonallfeedbackcontainer{
+   display: flex;
+      
+   width: 250px;
+   height: 50px; 
+
+   margin: 3.5rem auto 0 auto;
+   
+   background-color: #FED100;
+   
+   justify-content:center;
+   align-items: center; 
+   
+   border: 1px solid #333333;
+}
+
+
+.txt_main__feedback_buttonallfeedback{
+   font-size: 1.25rem;
+   font-weight: 500;   
+   user-select: none;
+}
+
+.main__feedback_buttonallfeedbackcontainer:hover{
+   box-shadow: 0 0 0 5px #FED100,
+               0 0 0 6px white;
+   
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.main__feedback_buttonallfeedbackcontainer:hover .txt_main__feedback_buttonallfeedback{
+   
+   font-weight: 700;   
+   transition: 0.5s;
+}
+/*------------End of Feedback area of Tablet version--------------------*/
+
 
 }
 /*------------End of Tablet version-------------*/
@@ -852,8 +1063,172 @@
    
 }
 
+/*------------End of Autopark area of Mobile version-------------------*/
 
-/*------------End of Autopark area of Mobile version-------------*/
+/*------------Start of Feedback area of Mobile version-----------------*/
+.main__feedback{
+   background-color: #FED100;
+   color: var(--main-txt-color);
+   
+   margin: 0px;   
+   padding: 0rem 2% 3rem 2%;
+   
+   display: block;
+
+}
+
+.main__feedbackcontainer{      
+   margin: 0px;
+   width: 100%;
+   padding: 0px;
+
+}
+
+.main__feedbackheader{
+   padding: 2.5rem 0rem 0rem 0rem;
+   margin:0;
+
+   text-align: center;   
+}
+
+.txt_main__feedbackheader{
+   font-size: 1.25rem;
+   font-weight: 600;   
+   margin: 0px;
+   padding: 0px;
+   
+}
+
+
+
+.main__feedbackcards_container{
+   
+   display: blo;
+
+   border-color: greenyellow;
+   border-style: dotted;
+
+}
+
+.main__feedbackcard{
+  
+   width: 100%;
+   margin: 0 auto;
+
+   flex-grow: 1;
+   flex-basis: 50%;
+
+   border-color: blue;
+   border-style: dotted;
+   
+
+   
+}
+.main__feedbackcard:first-child, .main__feedbackcard:last-child  {
+   /*
+   
+   max-width: 420px;
+*/
+   display:none;
+}
+
+.txt_main__feedbackcard_name{
+   font-size: 1.5rem;
+   font-weight: 600;   
+   margin: 0px;
+   padding: 0px;
+   
+}  
+
+.txt_main__feedbackcard_date{
+   font-size: 1rem;
+   font-weight: 400;
+
+   margin: 0.625rem 0rem 0rem 0rem;
+   
+   padding: 0px;   
+}
+
+
+.main__feedback_text{
+   height: 140px;
+   overflow: hidden;
+   
+}
+
+.txt_main__feedback_text{
+   font-size: 1rem;
+   font-weight: 400;
+   
+   margin: 1.125rem 0rem 0rem 0rem;
+   padding: 0px;
+   
+   -webkit-line-clamp: 6; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+   
+}
+.main__feedback_readalltxt{
+   margin-top: 1.125rem;
+   display: contents;
+}
+.txt_main__feedback_readalltxt{
+   font-size: 1rem;
+   font-weight: 500;
+   text-decoration: underline;
+   margin: 0px;
+   padding: 0px;
+}
+
+/*------------start of radiobutton section -------------*/
+.main__feedback_radiobuttonscontainer{
+   display: none;
+   
+}
+
+
+
+/*------------end of radiobutton section -------------*/
+
+.main__feedback_buttonallfeedbackcontainer{
+   display: flex;
+      
+   width: 292px;
+   height: 60px; 
+
+   margin: 3.125rem auto 0 auto;
+   
+   background-color: #FED100;
+   
+   justify-content:center;
+   align-items: center; 
+   
+   border: 1px solid #333333;
+}
+
+
+.txt_main__feedback_buttonallfeedback{
+   font-size: 1.25rem;
+   font-weight: 500;   
+   user-select: none;
+}
+
+.main__feedback_buttonallfeedbackcontainer:hover{
+   box-shadow: 0 0 0 5px #FED100,
+               0 0 0 6px white;
+   
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.main__feedback_buttonallfeedbackcontainer:hover .txt_main__feedback_buttonallfeedback{
+   
+   font-weight: 700;   
+   transition: 0.5s;
+}
+
+/*------------End of Feedback area of Mobile version-----------------*/
 
 }
 /*------------End of Mobile version-------------*/
