@@ -1103,26 +1103,15 @@
 
 .main__feedbackcards_container{
    
-   display: blo;
-
-   border-color: greenyellow;
-   border-style: dotted;
-
 }
 
 .main__feedbackcard{
   
+   max-width: none;
+
    width: 100%;
    margin: 0 auto;
-
-   flex-grow: 1;
-   flex-basis: 50%;
-
-   border-color: blue;
-   border-style: dotted;
-   
-
-   
+      
 }
 .main__feedbackcard:first-child, .main__feedbackcard:last-child  {
    /*
@@ -1187,14 +1176,12 @@
    
 }
 
-
-
 /*------------end of radiobutton section -------------*/
 
 .main__feedback_buttonallfeedbackcontainer{
    display: flex;
       
-   width: 292px;
+   width: 280px;
    height: 60px; 
 
    margin: 3.125rem auto 0 auto;
